@@ -8,5 +8,10 @@ $("#fontSelect").addEventListener("click", function(){
 $("#sizeSelect").addEventListener("click", function(){
     let size = $("#sizeSelect").value;
     console.log(size);
-    $("#displayText").fontSize = size;
+    $("#displayText").style.fontSize = size;
+})
+
+$("#colorSelect").addEventListener("click", function(){
+    let color = $("#colorSelect").value;
+    $("#displayText").style.color = color;
 })
